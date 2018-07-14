@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../../CDA%20R2/cda-schemas-and-samples/infrastructure/cda/CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:l7-org:sdtc" xmlns:fhir="http://hl7.org/fhir/v3">
+ <realmCode code="US"/>
+ <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+ <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+ <id extension="Health Export CDA" root="1.1.1.1.1.1.1.1.1"/>
+ <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="34109-9" displayName="Note"/>
+ <title>Health Data Export</title>
+ <effectiveTime value="20180714124734+0200"/>
+ <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+ <recordTarget>
+  <patientRole>
+   <id root="2.16.840.1.113883.4.6" nullFlavor="NA"/>
+   <patient>
+    <name use="CL"/>
+    <birthTime value=""/>
+   </patient>
+  </patientRole>
+ </recordTarget>
+ <entry typeCode="DRIV">
+  <organizer classCode="CLUSTER" moodCode="EVN">
+   <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+   <id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
+   <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+   <statusCode code="completed"/>
+   <effectiveTime>
+    <low value="20180523231600+0200"/>
+    <high value="20180523231600+0200"/>
+   </effectiveTime>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+     <text>
+      <sourceName>Health</sourceName>
+      <sourceVersion>11.1.2</sourceVersion>
+      <value>176</value>
+      <type>HKQuantityTypeIdentifierHeight</type>
+      <unit>cm</unit>
+      <metadataEntry>
+       <key>HKWasUserEntered</key>
+       <value>1</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180523231600+0200"/>
+      <high value="20180523231600+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="176" unit="cm"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+  </organizer>
+ </entry>
+ <entry typeCode="DRIV">
+  <organizer classCode="CLUSTER" moodCode="EVN">
+   <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+   <id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
+   <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+   <statusCode code="completed"/>
+   <effectiveTime>
+    <low value="20180323085756+0200"/>
+    <high value="20180713000000+0200"/>
+   </effectiveTime>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>109.8</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p5</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>4B15A067-D48F-4D6A-AB82-3ADEE4A2A671</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180515073402+0200"/>
+      <high value="20180515073402+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="109.8" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>109.6</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p6</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>98D40A86-A069-4864-A246-8C13B9191A6D</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180523074709+0200"/>
+      <high value="20180523074709+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="109.6" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>112</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p4</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>E031ED76-C254-4C6B-A154-75A2857B209E</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180507200312+0200"/>
+      <high value="20180507200312+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="112" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>113.4</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p3</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>C4ABE1B9-0563-48DE-84C3-E31ADC87F583</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180427231618+0200"/>
+      <high value="20180427231618+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="113.4" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>119</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p2</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>1D52BC17-0466-4C87-B479-B1A55BBF27FE</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180323085756+0200"/>
+      <high value="20180323085756+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="119" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>108.2</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p7</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>1B6101AE-987E-4424-9885-E035855103D3</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180604194247+0200"/>
+      <high value="20180604194247+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="108.2" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Pacer</sourceName>
+      <sourceVersion>3.8.2.467</sourceVersion>
+      <value>108</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+      <metadataEntry>
+       <key>pacerHealthKitWeightLogObjectId</key>
+       <value>/WeightLog/p8</value>
+      </metadataEntry>
+      <metadataEntry>
+       <key>pacerHealthKitLogClientHash</key>
+       <value>884995CB-C27C-419E-B8BD-CB361DCDB56D</value>
+      </metadataEntry>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180612091601+0200"/>
+      <high value="20180612091601+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="108" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+   <component>
+    <observation classCode="OBS" moodCode="EVN">
+     <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+     <id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+     <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+     <text>
+      <sourceName>Connect</sourceName>
+      <sourceVersion>16</sourceVersion>
+      <value>109</value>
+      <type>HKQuantityTypeIdentifierBodyMass</type>
+      <unit>kg</unit>
+     </text>
+     <statusCode code="completed"/>
+     <effectiveTime>
+      <low value="20180713000000+0200"/>
+      <high value="20180713000000+0200"/>
+     </effectiveTime>
+     <value xsi:type="PQ" value="109" unit="kg"/>
+     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+    </observation>
+   </component>
+  </organizer>
+ </entry>
+</ClinicalDocument>
